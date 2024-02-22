@@ -145,7 +145,7 @@ function getResponse(query) {
 
         const responseText = response(query); // Call the response function
         if (responseText) {
-            responseArea.innerHTML = `<img src="./img/chat gpt/logo.png" class="logo"> <span id="chatGPT-response"></span>`;
+            responseArea.innerHTML = `<img src="logo.png" class="logo"> <span id="chatGPT-response"></span>`;
             typeResponse(responseText.toString(), responseArea.querySelector('#chatGPT-response'));
         }
     }
