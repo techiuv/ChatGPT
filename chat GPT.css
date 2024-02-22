@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+}
+
+#editBtn{
+    position: absolute;
+    right: 10px;
+    font-size: 1.1rem;
+    opacity: 0;
+}
+
+#sort{
+    position: absolute;
+    left: 10px;
+    font-size: 1.8rem;
+    opacity: 0;
+}
+
+.chevron-down{
+    height: 6px;
+    width: 6px;
+    background: transparent;
+    margin: 1px 0px 2px 5px;
+    transform: rotate(45deg);
+    border-bottom: 2px solid #9b9b9b;
+    border-right: 2px solid #9b9b9b;
+}
+
+#head-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;    
+    width: 10vw;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 5px;
+}
+
+#head-btn:hover{
+    background: #f1f1f1;
+}
+
+#three-five{
+    color: #cdcdcd;
+}
+
+header{
+    display: flex;
+    justify-content: center;   
+}
+
+.side-bar{
+    width: 43%;
+    background: #f9f9f9;
+    height: 100vh;    
+    position: absolute;
+    top: 0; 
+    left: 0;
+}
+
+.logo{
+    height: 35px;
+    width: 35px;
+    margin: 10px 5px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    flex-wrap: wrap;
+}
+
+#heading-history,#heading{
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    height: 6vh;
+}
+
+#close{
+    position: absolute;
+    left: 100%;
+    margin: 10px;
+    border: 1px solid grey;
+    padding: 10px;
+    color: black;
+    opacity: 0;
+}
+
+#edit-square{
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.history{
+    height: 78vh;
+    width: 100%;
+    overflow: scroll;;
+}
+
+.upgrade-area, #login-id{
+    display: flex;
+    align-items: center;
+    height: 8vh;
+}
+
+.upgarde-plan{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.upgrade-offer{
+    font-size: 0.8rem;
+    color: grey;
+}
+
+#logo{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+  
+}
+
+.main{
+    display: flex;    
+    justify-content: center;
+}
+
+.main-area{
+    width: 55vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    right: 0;
+    overflow: scoll;
+    scroll-behavior: smooth;
+}
+
+.chat-display{
+    width: 50vw;
+    height: 75vh;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    display: none;
+    overflow: scroll;
+}
+
+.sender-area,.response{
+    display: flex;
+    align-items: center;
+    margin: 2px 20px;
+    color: black;
+}
+
+#main{
+    margin-top: 25vh;
+}
+
+#main-para,#logo-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin: 3px;
+    font-size: 1.2rem;
+}
+
+#suggestions{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    margin-top: 60px;
+}
+
+.suggestions{
+    height: 10vh;
+    width: 25vw;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+}
+
+.title{
+    font-size: 1.2rem;    
+    margin: 3px 0px;
+}
+
+.description{
+    font-size: 0.9rem;
+    color: lightgrey;
+}
+
+footer{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#input-box{
+    height: 6vh;
+    width: 52vw;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    margin: 5px;
+}
+
+input{
+    width: 48vw;
+    height: 5vh;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+button{
+    height: 4vh;
+    width: 2vw;
+    border-radius: 6px;
+    border: none;
+    color: black;
+    background: #f9f9f9;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-para{
+    font-size: 1rem;
+}
+
+.date{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 5px 15px;
+    color: black;
+}
+
+.query{
+    font-size: 0.9rem;
+    color: grey;
+    margin: 5px 15px;
+    color: grey;
+}
+
+@media (prefers-color-scheme: dark){
+    body{
+        background: #171717;
+        color: white;
+    }   
+    
+    header{
+        border-bottom: 0.5px solid grey;
+    }  
+    
+    #head-btn:hover{
+        background: #121212;
+    }
+    
+    .logo{
+        background: white;
+    }  
+    
+    #input-box{
+        border: 1px solid grey;
+    }
+    
+    input{
+        color: white;        
+    }
+    
+    button{
+        background: #2f2f2f;
+        color: #171717;
+    }
+    
+    .suggestions{
+        border: 1px solid grey;
+        color: white;
+    }    
+    
+    #close{
+        color: white;
+    }
+    
+    .chat-display{
+        color: white;
+    }
+    
+    .sender-area,.response{
+        color: white;
+    }  
+    
+    #side-bar{
+        background: black;
+    }
+    
+    .query{
+        color: lightgrey;
+    }
+    
+    .date{
+        color: white;
+    }
+}
+
+
+@media screen and (max-width:1000px){
+    .side-bar{
+        width: 40%;
+    }
+    
+    #head-btn{
+        width: 15vw;
+        height: 6vh;
+    }
+    
+    #footer-para{
+        font-size: 0.85rem;
+    }
+    
+    #input-box{
+        width: 50vw;
+        height: 8vh;
+    }
+    
+    input{
+        width: 46vw;
+    }
+    
+    #suggestions,#main{
+        margin-top: 25px;
+    }
+    
+    .chat-display{
+        height: 70vh;
+    }
+    
+}
+
+@media screen and (max-width:800px){
+    #footer-para{
+        font-size: 0.75rem;
+    }
+    
+    .main-area,.chat-display{
+        right: 20px;
+    }
+    
+    .suggestions{
+        width: 20vw;
+    }
+}
+
+
+@media screen and (max-width:680px){
+    #input-box{
+        width: 48vw;
+    }
+    
+    input{
+        width: 44vw;
+    }
+    
+    #footer-para{
+        font-size: 0.65rem;
+    }
+    
+    .main-area, .chat-display{
+        right: 10px;
+    }
+    
+    #head-btn{
+        width: 18vw;
+        height: 5vh;
+    }
+}
+
+@media screen and (max-width:500px){
+    .side-bar{
+        background: black;
+        color: white;
+        transform: translateX(-100vw); 
+        transition: all 0.5s ease;
+        z-index: 100;
+        width: 60%;
+    }
+    
+    #sbox-four, #sbox-three{
+        display: none;
+    }
+    
+    .main-area,.chat-display{
+        position: relative;
+        width: 100vw;
+        margin-top: 1vh;
+        height: 80vh;
+    }
+    
+    #suggestions{
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+    
+    .suggestions{
+        width: 80vw;
+    }
+    
+    #suggestions,#main{
+        margin-top: 80px;
+    }
+    
+    #input-box{
+        width: 85vw;
+        height: 5vh;
+        position: relative;
+    }
+    
+    input{
+        width: 76vw;
+    }
+    
+    footer{    
+        position: fixed;
+        bottom: 20px;
+        right: 8.5%;
+    }
+    
+    button{
+        width: 6.5vw;
+        font-size: 1.2rem;
+        height: 3.8vh;
+    }
+    
+    #head-btn{
+        width: 25vw;
+        height: 3vh;
+    }
+    
+    .chevron-down{
+        height: 5px;
+        width: 5px;
+    }
+    
+    .upgrade-offer{
+        font-size: 0.7rem;
+    }
+    
+    .upgarde-plan{
+        font-size: 0.9rem;
+    }
+    
+    .main-area{
+        margin-top: 10vh;
+    }
+    
+    #editBtn,#sort,#close{
+        opacity: 1;
+    }
+    
+    .date{
+        color: white;
+    }
+        
+}
+
+
+@media screen and (max-width:390px){
+    .main-area, .chat-display{
+        margin-top: 10vh;
+    }
+    
+    #suggestions,#main{
+        margin-top: 40px;
+    }
+    
+    #head-btn{
+        width: 30vw;
+    }
+    
+    #input-box{
+        width: 80vw;
+        height: 6vh;
+    }
+    
+    input{
+        width: 71vw;
+    }
+    
+    footer{
+        right: 8%;
+    }
+    
+    #footer-para{
+        font-size: 0.55rem;
+    }
+}
+
+@media screen and (max-width:330px){
+    #head-btn{
+        width: 35vw;
+    }
+    
+    #input-box{
+        width: 75vw;
+    }
+    
+    input{
+        width: 66vw;
+    }
+}
