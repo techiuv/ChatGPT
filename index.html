@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT</title>
+    <link rel="stylesheet" href="chat GPT.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span class="material-symbols-outlined" id="sort">short_text</span>
+        <span id="head-btn">ChatGPT <span id="three-five">  3.5</span><div class="chevron-down"></div></span>
+        <span class="material-symbols-outlined" id="editBtn">edit_square</span>
+    </header>
+    <section class="main">
+        <div class="side-bar">
+            <span class="material-symbols-outlined" id="close">close</span>
+            <div id="heading-history">
+                <div id="heading">
+                    <img src="./img/chat gpt/logo.png" class="logo">
+                    <span class="new-chat">New Chat</span>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined" id="edit-square">edit_square</span>
+                </div>                                
+            </div>
+            <div class="history">
+                <!-- <div>
+                    <p class="date"></p>
+                    <p class="query"></p>
+                </div> -->
+            </div>
+            <div class="upgrade-area">
+                <img src="./img/chat gpt/upgradeplus.png" class="logo">
+                <div>
+                    <p class="upgarde-plan">Upgrade Plan<br><p class="upgrade-offer">Get GPT-4, DALL.E and more.</p></p>
+                </div>                
+            </div>
+            <div id="login-id">
+                <img src="./img/chat gpt/profile_pic_2.jpg" class="logo" id="profile-pic">
+                <p id="user-name"></p>
+            </div>
+        </div>
+        <div class="main-area">
+            <div id="main">
+                <div id="logo-area">
+                    <img src="./img/chat gpt/logo.png" id="logo">                
+                </div>
+                <div id="main-para">
+                    <p>How Can I help you today? </p>
+                </div>   
+                <div id="suggestions">
+                    <div class="suggestions">
+                        <p class="title"></p>
+                        <p class="description"></p>
+                    </div>                    
+                    <div class="suggestions">
+                        <p class="title"></p>
+                        <p class="description"></p>                       
+                    </div>
+                    <div class="suggestions" id="sbox-three">
+                        <p class="title"></p>
+                        <p class="description"></p>
+                    </div>
+                    <div class="suggestions" id="sbox-four">
+                        <p class="title"></p>
+                        <p class="description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="chat-display">
+            <!-- <div class="sender-area">
+                <img src="./img/chat interface/dp.jpg" class="logo">
+                <span id="sender-query">Query</span>                
+            </div>
+            <div class="response">
+                <img src="./img/chat gpt/logo.png" class="logo">
+                <span id="chatGPT-response">response</span>    
+            </div> -->
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div id="input-box">
+                <input type="text" id="input" placeholder="Message chatGPT...">
+                <button id="send-btn"><ion-icon name="arrow-up-outline"></ion-icon></button>
+            </div>
+            <div class="footer-para">
+                <p id="footer-para">ChatGPT can make mistakes.Consider checking important information.</p>
+            </div>      
+        </div>  
+    </footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+<script src="chatGPT.js"></script>  
+</body>
+</html>
