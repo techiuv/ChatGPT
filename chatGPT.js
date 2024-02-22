@@ -65,7 +65,7 @@ sendBtn.addEventListener('click', () => {
         chatDisplay.style.display = 'block';
         let senderArea = document.createElement('div');
         senderArea.className = 'sender-area';
-        senderArea.innerHTML = `<img src="./img/chat gpt/profile_pic_2.jpg" class="logo"> <span id="sender-query">${query}</span>`;
+        senderArea.innerHTML = `<img src="profile_pic_2.jpg" class="logo"> <span id="sender-query">${query}</span>`;
         chatDisplay.appendChild(senderArea);
         saveQuery(query);
         showHistory(query);
